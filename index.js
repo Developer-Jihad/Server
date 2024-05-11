@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Jihad
 // mvMf958ghvfTTCWO
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 const uri =
   "mongodb+srv://Jihad:mvMf958ghvfTTCWO@cluster0.szoaovn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
