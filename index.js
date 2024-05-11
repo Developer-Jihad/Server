@@ -11,7 +11,6 @@ app.use(express.json());
 
 // Jihad
 // mvMf958ghvfTTCWO
-app.get("/", (req, res) => res.send("Express on Vercel"));
 
 const uri =
   "mongodb+srv://Jihad:mvMf958ghvfTTCWO@cluster0.szoaovn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
@@ -31,6 +30,8 @@ async function run() {
     await client.connect();
     const database = client.db("Halal-Jobs");
     const jobCollection = database.collection("Jobs");
+
+    app.get("/", (req, res) => res.send("Express on Vercel"));
 
     app.get("/Jobs", async (req, res) => {
       const cursor = jobCollection.find();
