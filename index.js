@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Jihad
-//mvMf958ghvfTTCWO
+// mvMf958ghvfTTCWO
 
 const uri =
   "mongodb+srv://Jihad:mvMf958ghvfTTCWO@cluster0.szoaovn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
